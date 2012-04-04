@@ -78,6 +78,10 @@ module RablPresenter
       render(self.class.template)
     end
 
+    def as_json options={}
+      JSON.parse to_json(options)
+    end
+
     def method_missing method_name, *args, &block
       if method_name.to_s =~ /.*_path|_url$/ && context.respond_to?(method_name)
         context.send method_name, *args, &block

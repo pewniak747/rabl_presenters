@@ -1,4 +1,3 @@
-# encoding: utf-8
 module RablPresenter
   class Enumerable < Base
     include ::Enumerable

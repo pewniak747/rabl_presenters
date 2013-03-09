@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'rabl_presenters/base'
 require 'rabl_presenters/enumerable'
 

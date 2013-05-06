@@ -13,6 +13,10 @@ module RablPresenter
       end
     end
 
+    def to_ary
+      to_a
+    end
+
     def self.applicable_to? object
       object.kind_of? ::Enumerable
     end
